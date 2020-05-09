@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+font-weight: 500;
+color: #333;
+line-height: 2.0;
+letter-spacing: 0.1em;
+}
+
+*,*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+h2,h3,h4,h5 {
+margin: 0;
+padding: 0;
+}
+
+img {
+width: 100%;
+vertical-align: bottom;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,li,dl,dt,dd {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all .6s ease;
+}
+
+a:hover{
+  transition: all .6s ease;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.content-wrapper h2 {
+  padding: 30px 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+header .content-wrapper {
+  display: flex;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: large;
+}
+
+header h3 {
+  padding-right: 250px;
+}
+
+
+header nav ul {
+  display: flex;
+  
+}
+
+header nav ul li {
+  padding-left: 50px;
+}
+
+.mainvisual {
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.mainvisual h1 {
+  padding-top: 80px;
+  font-size: 35px;
+}
+
+.mainvisual p {
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.about img{
+  width: 45%;
+}
+
+.about p {
+  font-size: medium;
+  font-weight: bold;
+  width: 50%;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: medium;
+  text-align: start;
+}
+
+.course-icon{
+  width: 30%;
+}
+
+.contact p {
+  font-size: medium;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  border:1px solid 0.8;
+  border-radius: 20px;
+}
+
+.btn {
+  background: tomato;
+  padding: 0 50px;
+  margin-top: 10px;
+}
+
+.btn a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  background: orange;
+}
+
+.copyright {
+  text-align: right;
+  font-size: small;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header .content-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  header h3 {
+    padding-right: 0;
+    padding-top: 10px;
+    font-size: 2.5rem;
+  }
+  
+  header nav ul {
+    line-height: 50px;
+    justify-content: space-around;
+  }
+  
+  header nav ul li {
+    padding-left: 0;
+
+  }
+
+  .mainvisual{
+    width: 100%;
+    background-size: auto auto;
+    height: 600px;
+  }
+
+  .mainvisual h1{
+    font-size: 2.5rem;
+    padding-top: 110px;
+  }
+
+  .mainvisual p {
+    padding-top: 20px;
+  }
+  
+  .about {
+    display: block;
+  }
+
+  .about img {
+    width: 90%;
+  }
+
+  .about p {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .course-item {
+    display: block;
+  }
+  
+  .course-icon {
+    width: 80%;
+    margin: 0 auto; 
+  }
+
+  .course-icon p{
+    padding-bottom: 25px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .btn a{
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .copyright{
+    text-align: center;
+  }
+}
